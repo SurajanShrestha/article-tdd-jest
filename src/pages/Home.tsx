@@ -17,7 +17,7 @@ export const HomePage = () => {
         <img src={testingLibLogo} className="App-logo" alt="logo" />
       </div>
       <p>
-        Learning Testing React apps with{" "}
+        Testing React apps with{" "}
         <a
           className="App-link"
           href="https://jestjs.io/"
@@ -36,33 +36,12 @@ export const HomePage = () => {
           React Testing Library
         </a>
       </p>
-      <h3>Testing done in these pages 👇:</h3>
-      <div>
-        <ol
-          style={{
-            ...flexCenteredSx,
-            flexDirection: "column",
-            gap: 12,
-            marginBottom: 60,
-          }}
-        >
-          <li>
-            <Link to="/counter" className="App-link">
-              Counter
-            </Link>
-          </li>
-          <li>
-            <Link to="/form" className="App-link">
-              Form
-            </Link>
-          </li>
-          <li>
-            <Link to="/posts" className="App-link">
-              Posts (Fetches API)
-            </Link>
-          </li>
-        </ol>
-      </div>
+      <h3>
+        Check out 👉:{" "}
+        <Link to="/counter" className="App-link">
+          Counter
+        </Link>
+      </h3>
       <small style={{ background: "rgb(0,0,0,0.2)", padding: 8, fontSize: 16 }}>
         Note 💡: We've also written Tests for small components which are not
         mounted in the UI.
