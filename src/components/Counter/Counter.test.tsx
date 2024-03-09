@@ -4,7 +4,7 @@ import { Counter } from ".";
 it("increment counter", () => {
   const { getByTestId } = render(<Counter />);
 
-  fireEvent.click(getByTestId("count-up"));
+  fireEvent.click(getByTestId("count-upx"));
   fireEvent.click(getByTestId("count-up"));
 
   expect(getByTestId("counter")).toHaveTextContent("2");
