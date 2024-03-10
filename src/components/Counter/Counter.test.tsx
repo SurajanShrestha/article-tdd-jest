@@ -7,8 +7,9 @@ it("increment counter", () => {
   fireEvent.click(getByTestId("count-up"));
   fireEvent.click(getByTestId("count-up"));
   fireEvent.click(getByTestId("count-up"));
+  fireEvent.click(getByTestId("count-up"));
 
-  expect(getByTestId("counter")).toHaveTextContent("3");
+  expect(getByTestId("counter")).toHaveTextContent("4");
 });
 
 it("decrement counter", () => {
